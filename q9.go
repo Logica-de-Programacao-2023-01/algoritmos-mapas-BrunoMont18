@@ -4,23 +4,23 @@ import "fmt"
 
 func fibonacci(n int) map[int]int {
 
-	fibonas := make(map[int]int)
+	fibo := make(map[int]int)
 
-	for i := 0; len(fibonas) != n; i++ {
+	for i := 0; len(fibo) != n; i++ {
 
 		if i < 2 {
 
-			fibonas[i] = i
+			fibo[i] = i
 
 		} else {
 
-			fibonas[i] = fibonas[i-2] + fibonas[i-1]
+			fibo[i] = fibo[i-2] + fibo[i-1]
 
 		}
 
 	}
 
-	return fibonas
+	return fibo
 
 }
 
